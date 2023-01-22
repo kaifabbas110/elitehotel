@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Hotel Booking</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__logo">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="header__logo__svg">
+                    <path
+                        d="M24.11 10c0.566-0.402 1.11-0.851 1.608-1.348 1.044-1.044 1.742-2.328 1.966-3.616 0.246-1.412-0.115-2.723-0.988-3.597-0.697-0.697-1.641-1.065-2.73-1.065-1.551 0-3.185 0.744-4.483 2.043-2.077 2.077-3.288 4.945-3.94 6.991-0.482-2.056-1.444-4.833-3.313-6.702-1.003-1.003-2.285-1.518-3.495-1.518-0.989 0-1.931 0.344-2.633 1.046-1.562 1.562-1.351 4.306 0.471 6.128 0.65 0.65 1.409 1.189 2.21 1.638h-6.782v8h2v14h24v-14h2v-8h-5.89zM21.073 4.007c0.866-0.866 1.948-1.384 2.892-1.384 0.334 0 0.803 0.070 1.139 0.406 0.813 0.813 0.357 2.697-0.977 4.031-1.373 1.373-3.221 2.318-4.826 2.939h-1.584c0.58-1.798 1.627-4.264 3.356-5.993zM7.31 5.028c-0.022-0.285-0.002-0.82 0.381-1.203 0.32-0.32 0.743-0.387 1.042-0.387v0c0.664 0 1.358 0.313 1.904 0.859 1.059 1.058 1.93 2.743 2.521 4.871 0.016 0.057 0.031 0.115 0.047 0.171-0.057-0.015-0.114-0.031-0.171-0.047-2.128-0.591-3.813-1.462-4.871-2.521-0.495-0.495-0.805-1.13-0.853-1.743zM14 30h-8v-13h8v13zM14 16h-10v-4h10v4zM26 30h-8v-13h8v13zM28 16h-10v-4h10v4z">
+                    </path>
+                </svg>
+            </div>
+            <div class="header__search">
+                <input type="text" placeholder="Search Hotel" class="header__search__input">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="header__search__svg">
+                    <path
+                        d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+                    </path>
+                </svg>
+            </div>
+            <div class="header__icons">
+                <div class="header__icons__box">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                        class="header__icons__bookmark">
+                        <path d="M6 0v32l10-10 10 10v-32z"></path>
+                    </svg>
+                    <span class="header__icons__notifications">6</span>
+                </div>
+                <div class="header__icons__box">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                        class="header__icons__mail">
+                        <path
+                            d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM8 8h16c0.286 0 0.563 0.061 0.817 0.177l-8.817 10.286-8.817-10.287c0.254-0.116 0.531-0.177 0.817-0.177zM6 22v-12c0-0.042 0.002-0.084 0.004-0.125l5.864 6.842-5.8 5.8c-0.045-0.167-0.069-0.34-0.069-0.517zM24 24h-16c-0.177 0-0.35-0.024-0.517-0.069l5.691-5.691 2.826 3.297 2.826-3.297 5.691 5.691c-0.167 0.045-0.34 0.069-0.517 0.069zM26 22c0 0.177-0.024 0.35-0.069 0.517l-5.8-5.8 5.865-6.842c0.003 0.041 0.004 0.083 0.004 0.125v12z">
+                        </path>
+                    </svg>
+                    <span class="header__icons__notifications">10</span>
+                </div>
+                <div class="header__icons__box">
+                    <img src="img/user.jpeg" alt="user img" class="header__icons__user">
+                    <span class="header__icons__user__name">Kaif</span>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="sidebar__nav">
+                    <li class="sidebar__nav__item sidebar__nav__item--active">
+                        <a href="#" class="sidebar__nav__link">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                class="sidebar__nav__icons">
+                                <path
+                                    d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z">
+                                </path>
+                            </svg>
+                            <span>hotel</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__nav__item">
+                        <a href="#" class="sidebar__nav__link">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                class="sidebar__nav__icons">
+                                <path
+                                    d="M24 19.999l-5.713-5.713 13.713-10.286-4-4-17.141 6.858-5.397-5.397c-1.556-1.556-3.728-1.928-4.828-0.828s-0.727 3.273 0.828 4.828l5.396 5.396-6.858 17.143 4 4 10.287-13.715 5.713 5.713v7.999h4l2-6 6-2v-4l-7.999 0z">
+                                </path>
+                            </svg>
+                            <span>flight</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__nav__item">
+                        <a href="#" class="sidebar__nav__link">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                class="sidebar__nav__icons">
+                                <path
+                                    d="M22 0c-5.523 0-10 4.477-10 10 0 0.626 0.058 1.238 0.168 1.832l-12.168 12.168v6c0 1.105 0.895 2 2 2h2v-2h4v-4h4v-4h4l2.595-2.595c1.063 0.385 2.209 0.595 3.405 0.595 5.523 0 10-4.477 10-10s-4.477-10-10-10zM24.996 10.004c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z">
+                                </path>
+                            </svg>
+                            <span>car rental</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__nav__item">
+                        <a href="#" class="sidebar__nav__link">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                class="sidebar__nav__icons">
+                                <path
+                                    d="M21 6l-10-4-11 4v24l11-4 10 4 11-4v-24l-11 4zM12 4.554l8 3.2v19.692l-8-3.2v-19.692zM2 7.401l8-2.909v19.744l-8 2.909v-19.744zM30 24.599l-8 2.909v-19.744l8-2.909v19.744z">
+                                </path>
+                            </svg>
+                            <span>tours</span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="sidebar__footer">&#169; 2022 By Kaif Abbas,All right reserved.</p>
+            </nav>
+            <main class="hotel-view">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="img/img1.jpg" alt="img1" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/img2.jpg" alt="img2" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/img3.jpg" alt="img3" class="gallery__photo">
+                    </figure>
+                </div>
+                <div class="overview">
+                    <h1 class="overview__heading">hotel da kaifi</h1>
+                    <div class="overview__stars">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="overview__stars__icon">
+                            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+                            </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="overview__stars__icon">
+                            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+                            </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="overview__stars__icon">
+                            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+                            </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" class="overview__stars__icon">
+                            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-0.029 0.015 0.029-17.837 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z"></path>
+                            </svg>                                
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="overview__stars__icon">
+                            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-6.983 3.671 1.334-7.776-5.65-5.507 7.808-1.134 3.492-7.075 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z"></path>
+                            </svg>
+                        </div>
+                    <div class="overview__location">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="overview__location__icon">
+                            <path d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"></path>
+                            </svg>
+                            <a href="#" class="pulsate__link">Hawai,California</a>
+                        </div>
+                        <div class="overview__rating">
+                            <div class="overview__rating__average">8.6</div>
+                            <div class="overview__rating__count">450 votes</div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="description">
+                            <p class="description__para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, nulla sit delectus, natus atque perferendis nostrum doloribus fugiat quam labore commodi qui illum necessitatibus esse beatae dolore praesentium fuga a?
+                            </p>
+                                <p class="description__para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nesciunt facere similique assumenda, accusamus dolor culpa mollitia asperiores vero esse dolores harum voluptate, nemo totam beatae doloribus odio. Odit, maiores!
+                                </p>
+                            <ul class="description__list">
+                                <li class="description__list__items">Close to the beach</li>
+                                <li class="description__list__items">Breakfast included</li>
+                                <li class="description__list__items">Free airport shuttel</li>
+                                <li class="description__list__items">Free wifi in all rooms</li>
+                                <li class="description__list__items">Air conditioning & heating</li>
+                                <li class="description__list__items">Pets allowed</li>
+                                <li class="description__list__items">Cousine</li>
+                                <li class="description__list__items">Perfect for families</li>
+                            </ul>
+                            <div class="recommend">
+                                <p class="recommend__count">
+                                    Lana & her friends recommend this hotel.
+                                </p>
+                                <div class="recommend__friends">
+                                    <img src="img/lana1.jpg" alt="friend1" class="recommend__friends__img">
+                                    <img src="img/lana2.jpg" alt="friend2" class="recommend__friends__img">
+                                    <img src="img/lana3.jpg" alt="friend3" class="recommend__friends__img">
+                                    <img src="img/lana4.jpg" alt="friend4" class="recommend__friends__img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-reviews">
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa itaque perspiciatis suscipit ut ipsum atque consectetur molestiae, commodi explicabo voluptate.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/lana4.jpg" alt="user1" class="review__photo">
+                                    <div class="review__user-box"> 
+                                        <p class="review__user-name">Nisha Alvi</p>
+                                        <p class="review__user-date">Jan 6,2023</p>
+                                    </div>
+                                    <div class="review__rating">8.9</div>
+                                </figcaption>
+                            </figure>
+                            
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa itaque perspiciatis suscipit ut ipsum atque consectetur molestiae, commodi explicabo voluptate.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/kendal.webp" alt="user1" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Kendal Jenner</p>
+                                        <p class="review__user-date">Jan 1,2023</p>
+                                    </div>
+                                    <div class="review__rating">8.9</div>
+                                </figcaption>
+                            </figure>
+                            <div class="review__btn">
+                                <button class="pulsate__link">Show all <span>&rarr;</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta">
+                        <h1 class="cta__heading">good news! we have 4 free rooms for your selected dates!</h1>
+                        <button class="cta__btn" type="submit">
+                            <span class="cta__btn__visible">
+                                book now!
+                            </span>
+                            <span class="cta__btn__invisible">
+                                only 4 rooms left!
+                            </span>
+                        </button>
+                    </div>
+            </main>
+        </div>
+</body>
+
+</html>
